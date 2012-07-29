@@ -1,0 +1,124 @@
+/*
+VFW 1207
+Cabe Bartz
+Project 3
+additem.html
+July 8th 2012
+*/
+body {
+	/* font-family will be inherited by all other css tags*/
+	font-family: helvetica, arial, san-serif;
+	background-image: -webkit-gradient(
+	linear,
+	right top,
+	right bottom,
+	color-stop(1, #71B0B0),
+	color-stop(0.31, #265252),
+	color-stop(0, #61989E)
+	);
+}
+h1 {
+	/* css for title */
+	font-size: 24px;
+	color: #c7bd87;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: .5px;
+	text-shadow: 2px 2px 1px rgba(0,0,0,0.5);
+	margin: 5px 5px;
+	border: 5px double #555555;
+	border-radius: 10px;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+	padding: 5px;
+	background-image: -webkit-gradient(
+	linear,
+	right top,
+	right bottom,
+	color-stop(1, #BAB9B3),
+	color-stop(0.31, #919088),
+	color-stop(0, #D9D6C5)
+	);
+}
+h2 {
+	/* css for description */
+	font-size: 18px;
+	text-align: center;
+	color: #b6bdbd;
+	margin: 50px 5px;
+}
+p {
+	/* css for additem link */
+	text-align: center;
+	margin: 50px 5px;
+}
+a {
+	/* add outline to links */
+	outline: 1px dotted purple;
+}
+a[id="displayData"] {
+	/* moves display data link to right */
+	float: right;
+}
+a[id="addNew"] {
+	/* moves add another bill link to right */
+	float: right;
+}
+legend {
+	font-size: 10px;	
+	background-image: -webkit-gradient(
+	linear,
+	right top,
+	right bottom,
+	color-stop(1, #BAB9B3),
+	color-stop(0.31, #919088),
+	color-stop(0, #D9D6C5)
+	);
+	margin: 0px;
+	padding: 0px 20px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+	text-transform: uppercase;
+}
+fieldset {
+	/* css for fieldset box */
+	font-size: 14px;
+	background-image: -webkit-gradient(
+	linear,
+	right top,
+	right bottom,
+	color-stop(1, #DED39E),
+	color-stop(0.31, #9E9A6A),
+	color-stop(0, #F0E9BB)
+	);
+	line-height: 30px;
+	margin: 10px 0 5px 0;
+	border-radius: 10px;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+}
+li {
+	/* move list items to the left--makes room for input to be on same line */
+	margin-left: -35px;
+	list-style-type: none;
+}
+select {
+	/* moves category drop down to right and resizes */
+	float: right;
+	width: 128px;
+}
+input {
+	/* move input fields to right */
+	float: right;
+}
+textarea {
+	/* move comment box to right */
+	float: right;
+}
+input[id="dueDate"] {
+	/* resize date input */
+	width: 121px;
+}
+
+input[id="submit"] {
+	/* move submit button back to left because it inherited float: right; properties */
+	float: left;
+}
