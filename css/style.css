@@ -49,10 +49,11 @@ input[id="addBill"]{
 	top: 168px;
 	left: 225px;
 }
-p {
-	/* css for additem link */
-	text-align: center;
-	margin: 50px 5px;
+div[id="searchField"]{
+	margin: -5px 4px;
+}
+input[id="searchBar"]{
+	float: left;
 }
 a {
 	/* add outline to links */
