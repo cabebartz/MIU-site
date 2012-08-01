@@ -33,31 +33,69 @@ h1 {
 	);
 }
 img {
+	/* makes h1 and add a bill button position relative to image */
 	position: relative;
 }
-h2 {
+h2[id="track"] {
 	/* css for description */
-	font-size: 18px;
+	font-size: 22px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 	position: absolute;
-	top: 95px;
-	left: 50px;
+	top: 87px;
+	left: 35px;
 	color: #2ba69f;
 	margin: 50px 5px;
 }
 input[id="addBill"]{
+	/* position add bill button on image */
 	position: absolute;
 	top: 168px;
 	left: 225px;
 }
 div[id="searchField"]{
-	margin: -5px 4px;
+	/* reposition search bar nad button */
+	margin: -5px 4px 30px;
 }
 input[id="searchBar"]{
 	float: left;
 }
-a {
-	/* add outline to links */
-	outline: 1px dotted purple;
+h2[id="browse"]{
+	/* css for Browse By title */
+	margin-bottom: 0px;
+	color:  #c7bd87;
+	text-shadow: 2px 2px 1px rgba(0,0,0,0.5);
+	text-align: center;
+	border: 1px solid #555555;
+	border-radius: 10px;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+	background-image: -webkit-gradient(
+	linear,
+	right top,
+	right bottom,
+	color-stop(1, #BAB9B3),
+	color-stop(0.31, #919088),
+	color-stop(0, #D9D6C5)
+	);
+}
+div[id="browseLinks"] {
+	/* css for browse links */
+	background-size:400px 200px;
+	background-repeat:no-repeat;
+	color:  black;
+	font-size: 22px;
+	text-shadow: 2px 2px 1px rgba(0,0,0,0.5);
+	text-align: center;
+	border: 1px solid #555555;
+	border-radius: 10px;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+	background-image: -webkit-gradient(
+	linear,
+	right top,
+	right bottom,
+	color-stop(1, #BAB9B3),
+	color-stop(0.31, #919088),
+	color-stop(0, #D9D6C5)
+	);
 }
 a[id="displayData"] {
 	/* moves display data link to right */
