@@ -8,14 +8,7 @@ July 8th 2012
 body {
 	/* font-family will be inherited by all other css tags*/
 	font-family: helvetica, arial, san-serif;
-	background-image: -webkit-gradient(
-	linear,
-	right top,
-	right bottom,
-	color-stop(1, #71B0B0),
-	color-stop(0.31, #265252),
-	color-stop(0, #61989E)
-	);
+	background-color: #61989E;
 }
 h1 {
 	/* css for title */
@@ -25,7 +18,7 @@ h1 {
 	text-align: center;
 	letter-spacing: .5px;
 	text-shadow: 2px 2px 1px rgba(0,0,0,0.5);
-	margin: 5px 5px;
+	margin: 0px 5px;
 	border: 5px double #555555;
 	border-radius: 10px;
 	box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
@@ -39,12 +32,22 @@ h1 {
 	color-stop(0, #D9D6C5)
 	);
 }
+img {
+	position: relative;
+}
 h2 {
 	/* css for description */
 	font-size: 18px;
-	text-align: center;
-	color: #b6bdbd;
+	position: absolute;
+	top: 95px;
+	left: 50px;
+	color: #2ba69f;
 	margin: 50px 5px;
+}
+input[id="addBill"]{
+	position: absolute;
+	top: 168px;
+	left: 225px;
 }
 p {
 	/* css for additem link */
