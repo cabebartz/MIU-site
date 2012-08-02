@@ -10,7 +10,7 @@ window.addEventListener("DOMContentLoaded", function () {
 		return anElement;
 	}
 	//variables
-	var billCategories = ["-- Pick A Category --", "Credit", "Rent", "Utilities", "Misc"],
+	var billCategories = ["-- Pick A Category --", "Credit", "Rent", "Utilities","Loans", "Misc"],
 		paidValue,
 		displayData = ElId('displayData'),
 		clear = ElId('clear'),

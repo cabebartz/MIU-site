@@ -30,10 +30,10 @@ var json = {
 		"comments": ["comments:", "yea its paid"]
 	},
 	"bill4": {
-		"category": ["Bill Category:", "Misc"],
-		"billName": ["Bill Name:", "Everything"],
-		"accountNum": ["Account Number:", "4876"],
-		"billAmount": ["Amount Due:", "300.89"],
+		"category": ["Bill Category:", "Loans"],
+		"billName": ["Bill Name:", "FSU"],
+		"accountNum": ["Account Number:", "4999"],
+		"billAmount": ["Amount Due:", "315.83"],
 		"dueDate": ["Date Due:", "2012-12-13"],
 		"billPaid": ["Is Bill Paid?", "Paid"],
 		"priority": ["Priority:", "2"],
