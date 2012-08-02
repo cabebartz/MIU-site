@@ -1,6 +1,6 @@
- // VFW 1207
+ // MIU 1208
 // Cabe Bartz
-// Project 3
+// Week1
 
 //DOM Listener
 window.addEventListener("DOMContentLoaded", function () {

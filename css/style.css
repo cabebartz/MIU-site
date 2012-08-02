@@ -1,9 +1,8 @@
 /*
-VFW 1207
+MIU 1208
 Cabe Bartz
-Project 3
+Week 1
 additem.html
-July 8th 2012
 */
 body {
 	/* font-family will be inherited by all other css tags*/
@@ -43,7 +42,7 @@ h2[id="track"] {
 	position: absolute;
 	top: 87px;
 	left: 35px;
-	color: #2ba69f;
+	color: #0e3f65;
 	margin: 50px 5px;
 }
 input[id="addBill"]{
@@ -77,13 +76,13 @@ h2[id="browse"]{
 	color-stop(0, #D9D6C5)
 	);
 }
-div[id="browseLinks"] {
+h3 {
 	/* css for browse links */
-	
-	color:  #2ba69f;
+	color: #0e3f65;
 	font-size: 22px;
 	text-shadow: 2px 2px 1px rgba(0,0,0,0.5);
 	text-align: center;
+	margin: 2px;
 	border: 1px solid #555555;
 	border-radius: 10px;
 	box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
@@ -91,9 +90,9 @@ div[id="browseLinks"] {
 	linear,
 	right top,
 	right bottom,
-	color-stop(1, #BAB9B3),
-	color-stop(0.31, #919088),
-	color-stop(0, #D9D6C5)
+	color-stop(1, #c8d57f),
+	color-stop(0.31, #c7bd87),
+	color-stop(0, #c8d57f)
 	);
 }
 a[id="displayData"] {
@@ -103,6 +102,9 @@ a[id="displayData"] {
 a[id="addNew"] {
 	/* moves add another bill link to right */
 	float: right;
+}
+a {
+	color: #0e3f65;
 }
 legend {
 	font-size: 10px;	
