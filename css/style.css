@@ -79,9 +79,8 @@ h2[id="browse"]{
 }
 div[id="browseLinks"] {
 	/* css for browse links */
-	background-size:400px 200px;
-	background-repeat:no-repeat;
-	color:  black;
+	
+	color:  #2ba69f;
 	font-size: 22px;
 	text-shadow: 2px 2px 1px rgba(0,0,0,0.5);
 	text-align: center;
