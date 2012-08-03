@@ -256,7 +256,7 @@ window.addEventListener("DOMContentLoaded", function () {
 			messageArray.push(dateError);
 		}
 		//bill paid validation
-		if (!(paid.checked) && !(notPaid.checked)){
+		if (!(getPaid.checked) && !(getNotPaid.checked)){
 			paidError = "Please choose a paid option";
 			getPaid.style.border = "1px solid red";
 			getNotPaid.style.border = "1px solid red";
