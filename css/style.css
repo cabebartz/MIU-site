@@ -55,7 +55,7 @@ div[id="searchField"]{
 	/* reposition search bar nad button */
 	margin: -5px 4px 30px;
 }
-input[id="searchBar"]{
+input[id="search"]{
 	float: left;
 }
 h2[id="browse"]{

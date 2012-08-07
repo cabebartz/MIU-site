@@ -12,15 +12,15 @@ window.addEventListener("DOMContentLoaded", function () {
 	//variables
 	var billCategories = ["-- Pick A Category --", "Credit", "Rent", "Utilities","Loans", "Misc"],
 		paidValue,
-		displayData = ElId('displayData'),
 		clear = ElId('clear'),
+		displayData = ElId('displayData'),
 		saveData = ElId('submit'),
 		errMessage = ElId('errors');
 
 	// create category group elements and give options
 	function makeCategory() {
 		var selectLi = ElId('select'),
-			createSelect = document.createElement('select');	
+			createSelect = document.createElement('select');
 		createSelect.setAttribute("id", "categories");
 		for (var i = 0, j = billCategories.length; i < j; i++) {
 			var makeOption = document.createElement('option'),
@@ -145,7 +145,7 @@ window.addEventListener("DOMContentLoaded", function () {
 	//makes edit and delete links for each local storage entry
 	function makeItemLinks(key, linksLi){
 		//add edit bill link
-		var editLink = document.createElement('a');	
+		var editLink = document.createElement('a');
 		editLink.href = "#";
 		editLink.key = key;
 		var editText = "Edit Bill";
@@ -275,11 +275,36 @@ window.addEventListener("DOMContentLoaded", function () {
 			//if no errors, run storeData
 			storeData(this.key);
 		}
-			
+
 	}
 	//click events and run makeCategory
 	clear.addEventListener("click", clearData);
 	displayData.addEventListener("click", getData);
 	saveData.addEventListener("click", validate);
 	makeCategory();
+
+/*//search
+	var search = ElId('searchButton');
+	var getSearch = function(){
+		var term = ElId('searchBar').value;
+
+		if(term === ""){
+			for(i = 0, j = localStorage.length; i < j; i++){
+				var key = localStorage.key(i);
+				var value = localStorage.getItem(key);
+				var obj = JSON.parse(value);
+				for(n in obj){
+					if(term === obj[n][1]){
+						for(q in obj){
+							console.log(obj[q][1]);
+						}
+					}
+				}
+			}
+		}
+	};
+
+	search.addEventListener("click", getSearch);
+*/
 });
+ 
