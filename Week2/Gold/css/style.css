@@ -1,0 +1,167 @@
+/*
+MIU 1208
+Cabe Bartz
+Week 1
+additem.html
+*/
+body {
+	/* font-family will be inherited by all other css tags*/
+	font-family: helvetica, arial, san-serif;
+	background-color: #61989E;
+}
+h1 {
+	/* css for title */
+	font-size: 24px;
+	color: #c7bd87;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: .5px;
+	text-shadow: 2px 2px 1px rgba(0,0,0,0.5);
+	margin: 0px 5px;
+	border: 5px double #555555;
+	border-radius: 10px;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+	padding: 5px;
+	background-image: -webkit-gradient(
+	linear,
+	right top,
+	right bottom,
+	color-stop(1, #BAB9B3),
+	color-stop(0.31, #919088),
+	color-stop(0, #D9D6C5)
+	);
+}
+img {
+	/* makes h1 and add a bill button position relative to image */
+	position: relative;
+}
+h2[id="track"] {
+	/* css for description */
+	font-size: 22px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	position: absolute;
+	top: 87px;
+	left: 35px;
+	color: #0e3f65;
+	margin: 50px 5px;
+}
+input[id="addBill"]{
+	/* position add bill button on image */
+	position: absolute;
+	top: 168px;
+	left: 225px;
+}
+div[id="searchField"]{
+	/* reposition search bar nad button */
+	margin: -5px 4px 30px;
+}
+input[id="search"]{
+	float: left;
+}
+h2[id="browse"]{
+	/* css for Browse By title */
+	margin-bottom: 0px;
+	color:  #c7bd87;
+	text-shadow: 2px 2px 1px rgba(0,0,0,0.5);
+	text-align: center;
+	border: 1px solid #555555;
+	border-radius: 10px;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+	background-image: -webkit-gradient(
+	linear,
+	right top,
+	right bottom,
+	color-stop(1, #BAB9B3),
+	color-stop(0.31, #919088),
+	color-stop(0, #D9D6C5)
+	);
+}
+h3 {
+	/* css for browse links */
+	color: #0e3f65;
+	font-size: 22px;
+	text-shadow: 2px 2px 1px rgba(0,0,0,0.5);
+	text-align: center;
+	margin: 2px;
+	border: 1px solid #555555;
+	border-radius: 10px;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+	background-image: -webkit-gradient(
+	linear,
+	right top,
+	right bottom,
+	color-stop(1, #c8d57f),
+	color-stop(0.31, #c7bd87),
+	color-stop(0, #c8d57f)
+	);
+}
+a[id="displayData"] {
+	/* moves display data link to right */
+	float: right;
+}
+a[id="addNew"] {
+	/* moves add another bill link to right */
+	float: right;
+}
+a {
+	color: #0e3f65;
+}
+legend {
+	font-size: 10px;	
+	background-image: -webkit-gradient(
+	linear,
+	right top,
+	right bottom,
+	color-stop(1, #BAB9B3),
+	color-stop(0.31, #919088),
+	color-stop(0, #D9D6C5)
+	);
+	margin: 0px;
+	padding: 0px 20px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+	text-transform: uppercase;
+}
+fieldset {
+	/* css for fieldset box */
+	font-size: 14px;
+	background-image: -webkit-gradient(
+	linear,
+	right top,
+	right bottom,
+	color-stop(1, #DED39E),
+	color-stop(0.31, #9E9A6A),
+	color-stop(0, #F0E9BB)
+	);
+	line-height: 30px;
+	margin: 10px 0 5px 0;
+	border-radius: 10px;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+}
+li {
+	/* move list items to the left--makes room for input to be on same line */
+	margin-left: -35px;
+	list-style-type: none;
+}
+select {
+	/* moves category drop down to right and resizes */
+	float: right;
+	width: 128px;
+}
+input {
+	/* move input fields to right */
+	float: right;
+}
+textarea {
+	/* move comment box to right */
+	float: right;
+}
+input[id="dueDate"] {
+	/* resize date input */
+	width: 121px;
+}
+
+input[id="submit"] {
+	/* move submit button back to left because it inherited float: right; properties */
+	float: left;
+}

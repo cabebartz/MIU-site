@@ -1,0 +1,286 @@
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Mobile Bill Tracker</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+	<!-- Center the header due to wrapping in div to not cut off words -->
+	<style type="text/css">
+    	h1 {
+        		text-align: center;
+    	}
+	</style>
+
+</head>
+<body>
+
+	<div data-role="page" id="home" Data-ajax="false">
+
+		<div data-role="header">
+			<div>
+				<h1>Mobile Bill Tracker<h1>
+				<img src="images/checkforMUI.png"/>
+				<p><a href="additem.html" data-theme="a" data-role="button" data-icon= "arrow-r" data-iconpos="right" Data-ajax="false">Click to Add A Bill</a></p>	
+			</div>
+		</div>
+
+		<div data-role="content">
+
+			<ul data-role="listview">
+				<li data-role="list-divider">
+					<h2>Browse By Category<h2>
+				</li>
+				<li>
+					<a href="#credit">
+						<h3>Credit<h3>
+						<img src="images/Credit.png"/>
+					</a>
+					
+				</li>
+				<li>
+					<a href="#rent">
+						<h3>Rent<h3>
+						<img src="images/Rent.png"/>
+					</a>
+					
+				</li>
+				<li>
+					<a href="#utilities">
+						<h3>Utilities<h3>
+						<img src="images/Utilities.png"/>
+					</a>
+					
+				</li>
+				<li>
+					<a href="#loans">
+						<h3>Loans<h3>
+						<img src="images/Loans.png"/>
+					</a>
+					
+				</li>
+				<li>
+					<a href="#misc">
+						<h3>Miscellaneous<h3>
+						<img src="images/Misc.png"/>
+					</a>
+					
+				</li>
+			</ul>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#info">Info</a></li>
+					<li><a href="/Gold/index.html">Gold</a></li><!-- add Gold Link -->
+					<li><a href="/Bronze/index.html">Bronze</a></li><!-- add Bronze Link -->
+				</ul>	
+			</div>
+		</div>
+
+	</div>
+
+	<div data-role="page" id="credit" data-add-back-btn="true">
+
+		<div data-role="header" data-position="fixed">
+			<h1>Credit<h1>
+		</div>
+
+		<div data-role="content">
+			<ul data-role="listview" data-filter="true">
+				<li>Alaska Air Card</li>
+				<li>American Express</li>
+				<li>Bank Of America</li>
+				<li>Best Buy</li>
+				<li>Chase</li>
+				<li>GoldCard</li>
+				<li>HSBC</li>
+				<li>Kmart</li>
+				<li>Mastercard</li>
+				<li>Navy Federal</li>
+				<li>Sears</li>	
+			</ul>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#info">Info</a></li>
+					<li><a href="/Gold/index.html">Gold</a></li><!-- add Gold Link -->
+					<li><a href="/Bronze/index.html">Bronze</a></li><!-- add Bronze Link -->
+				</ul>	
+			</div>
+		</div>
+
+	</div>
+
+	<div data-role="page" id="rent" data-add-back-btn="true">
+
+		<div data-role="header" data-position="fixed">
+			<h1>Rent<h1>
+		</div>
+
+		<div data-role="content">
+			<ul data-role="listview" data-filter="true">
+				<li>KPM</li>
+			</ul>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#info">Info</a></li>
+					<li><a href="/Gold/index.html">Gold</a></li><!-- add Gold Link -->
+					<li><a href="/Bronze/index.html">Bronze</a></li><!-- add Bronze Link -->
+				</ul>	
+			</div>
+		</div>
+
+	</div>
+	<div data-role="page" id="utilities" data-add-back-btn="true">
+
+		<div data-role="header" data-position="fixed">
+			<h1>Utilities<h1>
+		</div>
+
+		<div data-role="content">
+			<ul data-role="listview" data-filter="true">
+				<li>CenturyTel</li>
+				<li>Comcast</li>
+				<li>CNG</li>
+				<li>PSE</li>
+				<li>Verizon</li>
+			</ul>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#info">Info</a></li>
+					<li><a href="/Gold/index.html">Gold</a></li><!-- add Gold Link -->
+					<li><a href="/Bronze/index.html">Bronze</a></li><!-- add Bronze Link -->
+				</ul>	
+			</div>
+		</div>
+
+	</div>
+	<div data-role="page" id="loans" data-add-back-btn="true">
+
+		<div data-role="header" data-position="fixed">
+			<h1>Loans<h1>
+		</div>
+
+		<div data-role="content">
+			<ul data-role="listview" data-filter="true">
+				<li>FSU</li>
+			</ul>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#info">Info</a></li>
+					<li><a href="/Gold/index.html">Gold</a></li><!-- add Gold Link -->
+					<li><a href="/Bronze/index.html">Bronze</a></li><!-- add Bronze Link -->
+				</ul>	
+			</div>
+		</div>
+
+	</div>
+
+	<div data-role="page" id="misc" data-add-back-btn="true">
+
+		<div data-role="header" data-position="fixed">
+			<h1>Miscellaneous<h1>
+		</div>
+
+		<div data-role="content">
+			<ul data-role="listview" data-filter="true">
+				<li>Car Maintenance</li>
+				<li>College</li>
+				<li>Food</li>
+				<li>Fun</li>
+				<li>Gadget Money</li>
+				<li>Group Health</li>
+				<li>Furniture</li>
+			</ul>
+
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#info">Info</a></li>
+					<li><a href="/Gold/index.html">Gold</a></li><!-- add Gold Link -->
+					<li><a href="/Bronze/index.html">Bronze</a></li><!-- add Bronze Link -->
+				</ul>	
+			</div>
+		</div>
+
+	</div>
+	<div data-role="page" id="info" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>Info<h1>
+		</div>
+		<div data-role="content">
+			<ul data-role="listview">
+				<li data-role="list-divider">
+					<h2>Git Links<h2>
+				</li>
+				<li>
+					<a href="https://github.com/cabebartz/MIU-site">
+						<h3>Repository<h3>
+					</a>
+					
+				</li>
+				<li>
+					<a href="http://cabebartz.github.com/MIU-site">
+						<h3>gh-pages<h3>
+					</a>
+					
+				</li>
+			<ul>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#info">Info</a></li>
+						<li><a href="/Gold/index.html">Gold</a></li><!-- add Gold Link -->
+					<li><a href="/Bronze/index.html">Bronze</a></li><!-- add Bronze Link -->
+					</ul>	
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	
+
+	<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+
+</body>
+</html>
