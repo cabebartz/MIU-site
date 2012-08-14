@@ -1,0 +1,914 @@
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Mobile Bill Tracker</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+	<!-- Center the header due to wrapping in div to not cut off words -->
+	<style type="text/css">
+    	h1 {
+        		text-align: center;
+    	}
+	</style>
+
+</head>
+<body>
+
+	<div data-role="page" id="home" Data-ajax="false">
+
+		<div data-role="header">
+			<div>
+				<a href="additem.html">
+				<img  width="100%" src="images/checkforMUI.png"/>
+				</a>
+			</div>
+		</div>
+
+		<div data-role="content">
+
+			<ul data-role="listview">
+				<li data-role="list-divider">
+					<h2>Browse By Category<h2>
+				</li>
+				<li>
+					<a href="#credit">
+						<h3>Credit<h3>
+						<img src="images/Credit.png"/>
+					</a>
+					
+				</li>
+				<li>
+					<a href="#rent">
+						<h3>Rent<h3>
+						<img src="images/Rent.png"/>
+					</a>
+					
+				</li>
+				<li>
+					<a href="#utilities">
+						<h3>Utilities<h3>
+						<img src="images/Utilities.png"/>
+					</a>
+					
+				</li>
+				<li>
+					<a href="#loans">
+						<h3>Loans<h3>
+						<img src="images/Loans.png"/>
+					</a>
+					
+				</li>
+				<li>
+					<a href="#misc">
+						<h3>Miscellaneous<h3>
+						<img src="images/Misc.png"/>
+					</a>
+					
+				</li>
+			</ul>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#info">Info</a></li>
+					<li><a href="http://cabebartz.github.com/MIU-site/Week2/Gold/" Data-ajax="false">Gold</a></li>
+					<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
+				</ul>	
+			</div>
+		</div>
+
+	</div>
+
+	<div data-role="page" id="credit" data-add-back-btn="true">
+
+		<div data-role="header" data-position="fixed">
+			<h1>Credit<h1>
+		</div>
+
+		<div data-role="content">
+			<ul data-role="listview" data-filter="true">
+				<li><a href="#alaska">Alaska Air Card</a></li>
+				<li><a href="#american">American Express</a></li>
+				<li><a href="#boa">Bank Of America</a></li>
+				<li><a href="#bb">Best Buy</a></li>
+				<li><a href="#chase">Chase</a></li>
+				<li><a href="#gold">GoldCard</a></li>
+				<li><a href="#hsbc">HSBC</a></li>
+				<li><a href="#kmart">Kmart</a></li>
+				<li><a href="#mastercard">Mastercard</a></li>
+				<li><a href="#navy">Navy Federal</a></li>
+				<li><a href="#sears">Sears</a></li>	
+			</ul>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#info">Info</a></li>
+					<li><a href="http://cabebartz.github.com/MIU-site/Week2/Gold/" Data-ajax="false">Gold</a></li>
+					<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
+				</ul>	
+			</div>
+		</div>
+
+	</div>
+	<div data-role="page" id="alaska" data-add-back-btn="true" data-theme="b">
+			<div data-role="header" data-position="fixed">
+				<h1>Alaska Air Card<h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview">
+					<li>Account Number: 33333</li>
+					<li>Amount Due: $34.56</li>
+					<li>Date Due: 2012-9-15</li>
+					<li>Is Bill Paid? Paid</li>
+					<li>Priority: 3</li>
+					<li>Comments: None</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#info">Info</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Gold/" Data-ajax="false">Gold</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
+					</ul>	
+				</div>
+			</div>
+	</div>
+	<div data-role="page" id="american" data-add-back-btn="true" data-theme="b">
+			<div data-role="header" data-position="fixed">
+				<h1>American Express<h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview">
+					<li>Account Number: 6767</li>
+					<li>Amount Due: $50.00</li>
+					<li>Date Due: 2012-12-10</li>
+					<li>Is Bill Paid? Paid</li>
+					<li>Priority: 1</li>
+					<li>Comments: American Express</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#info">Info</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Gold/" Data-ajax="false">Gold</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
+					</ul>	
+				</div>
+			</div>
+	</div>
+	<div data-role="page" id="boa" data-add-back-btn="true" data-theme="b">
+			<div data-role="header" data-position="fixed">
+				<h1>Bank of America<h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview">
+					<li>Account Number: 12345</li>
+					<li>Amount Due: $125.00</li>
+					<li>Date Due: 2012-10-11</li>
+					<li>Is Bill Paid? Paid</li>
+					<li>Priority: 5</li>
+					<li>Comments: already paid</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#info">Info</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Gold/" Data-ajax="false">Gold</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
+					</ul>	
+				</div>
+			</div>
+	</div>
+	<div data-role="page" id="bb" data-add-back-btn="true" data-theme="b">
+			<div data-role="header" data-position="fixed">
+				<h1>Best Buy<h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview">
+					<li>Account Number: 8789</li>
+					<li>Amount Due: $100.45</li>
+					<li>Date Due: 2012-12-30</li>
+					<li>Is Bill Paid? Paid</li>
+					<li>Priority: 4</li>
+					<li>Comments: Stop using this card!</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#info">Info</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Gold/" Data-ajax="false">Gold</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
+					</ul>	
+				</div>
+			</div>
+	</div>
+	<div data-role="page" id="chase" data-add-back-btn="true" data-theme="b">
+			<div data-role="header" data-position="fixed">
+				<h1>Chase<h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview">
+					<li>Account Number: 55555</li>
+					<li>Amount Due: $100.34</li>
+					<li>Date Due: 2012-09-09</li>
+					<li>Is Bill Paid? Not Paid</li>
+					<li>Priority: 4</li>
+					<li>Comments: Visa</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#info">Info</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Gold/" Data-ajax="false">Gold</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
+					</ul>	
+				</div>
+			</div>
+	</div>
+	<div data-role="page" id="gold" data-add-back-btn="true" data-theme="b">
+			<div data-role="header" data-position="fixed">
+				<h1>GoldCard<h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview">
+					<li>Account Number: 0909</li>
+					<li>Amount Due: $87.43</li>
+					<li>Date Due: 2012-9-11</li>
+					<li>Is Bill Paid? Not Paid</li>
+					<li>Priority: 1</li>
+					<li>Comments: None</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#info">Info</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Gold/" Data-ajax="false">Gold</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
+					</ul>	
+				</div>
+			</div>
+	</div>
+	<div data-role="page" id="hsbc" data-add-back-btn="true" data-theme="b">
+			<div data-role="header" data-position="fixed">
+				<h1>HSBC<h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview">
+					<li>Account Number: 6547</li>
+					<li>Amount Due: $45.36</li>
+					<li>Date Due: 2012-11-15</li>
+					<li>Is Bill Paid? Paid</li>
+					<li>Priority: 2</li>
+					<li>Comments: None</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#info">Info</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Gold/" Data-ajax="false">Gold</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
+					</ul>	
+				</div>
+			</div>
+	</div>
+	<div data-role="page" id="kmart" data-add-back-btn="true" data-theme="b">
+			<div data-role="header" data-position="fixed">
+				<h1>Kmart<h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview">
+					<li>Account Number: 3212</li>
+					<li>Amount Due: $46.00</li>
+					<li>Date Due: 2012-08-15</li>
+					<li>Is Bill Paid? Paid</li>
+					<li>Priority: 1</li>
+					<li>Comments: None</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#info">Info</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Gold/" Data-ajax="false">Gold</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
+					</ul>	
+				</div>
+			</div>
+	</div>
+	<div data-role="page" id="mastercard" data-add-back-btn="true" data-theme="b">
+			<div data-role="header" data-position="fixed">
+				<h1>Mastercard<h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview">
+					<li>Account Number: 22222</li>
+					<li>Amount Due: $25.89</li>
+					<li>Date Due: 2012-02-02</li>
+					<li>Is Bill Paid? Not Paid</li>
+					<li>Priority: 4</li>
+					<li>Comments: Mastercard</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#info">Info</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Gold/" Data-ajax="false">Gold</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
+					</ul>	
+				</div>
+			</div>
+	</div>
+	<div data-role="page" id="navy" data-add-back-btn="true" data-theme="b">
+			<div data-role="header" data-position="fixed">
+				<h1>Navy Federal<h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview">
+					<li>Account Number: 3270009</li>
+					<li>Amount Due: $175.68</li>
+					<li>Date Due: 2012-11-30</li>
+					<li>Is Bill Paid? Paid</li>
+					<li>Priority: 7</li>
+					<li>Comments: None</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#info">Info</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Gold/" Data-ajax="false">Gold</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
+					</ul>	
+				</div>
+			</div>
+	</div>
+	<div data-role="page" id="sears" data-add-back-btn="true" data-theme="b">
+			<div data-role="header" data-position="fixed">
+				<h1>Sears<h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview">
+					<li>Account Number: 54609009</li>
+					<li>Amount Due: $17.45</li>
+					<li>Date Due: 2012-07-15</li>
+					<li>Is Bill Paid? Not Paid</li>
+					<li>Priority: 8</li>
+					<li>Comments: Late</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#info">Info</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Gold/" Data-ajax="false">Gold</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
+					</ul>	
+				</div>
+			</div>
+	</div>
+
+
+	<div data-role="page" id="rent" data-add-back-btn="true">
+
+		<div data-role="header" data-position="fixed">
+			<h1>Rent<h1>
+		</div>
+
+		<div data-role="content">
+			<ul data-role="listview" data-filter="true">
+				<li><a href="#kpm">KPM</a></li>
+			</ul>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#info">Info</a></li>
+					<li><a href="http://cabebartz.github.com/MIU-site/Week2/Gold/" Data-ajax="false">Gold</a></li>
+					<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
+				</ul>	
+			</div>
+		</div>
+
+	</div>
+	<div data-role="page" id="kpm" data-add-back-btn="true" data-theme="b">
+			<div data-role="header" data-position="fixed">
+				<h1>KPM<h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview">
+					<li>Account Number: 1234589</li>
+					<li>Amount Due: $1125.00</li>
+					<li>Date Due: 2012-10-15</li>
+					<li>Is Bill Paid? Not Paid</li>
+					<li>Priority: 9</li>
+					<li>Comments: Pay Soon</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#info">Info</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Gold/" Data-ajax="false">Gold</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
+					</ul>	
+				</div>
+			</div>
+	</div>
+	<div data-role="page" id="utilities" data-add-back-btn="true">
+
+		<div data-role="header" data-position="fixed">
+			<h1>Utilities<h1>
+		</div>
+
+		<div data-role="content">
+			<ul data-role="listview" data-filter="true">
+				<li><a href="#century">CenturyTel</a></li>
+				<li><a href="#comcast">Comcast</a></li>
+				<li><a href="#cng">CNG</a></li>
+				<li><a href="#pse">PSE</a></li>
+				<li><a href="#verizon">Verizon</a></li>
+			</ul>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#info">Info</a></li>
+					<li><a href="http://cabebartz.github.com/MIU-site/Week2/Gold/" Data-ajax="false">Gold</a></li>
+					<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
+				</ul>	
+			</div>
+		</div>
+	</div>
+
+	<div data-role="page" id="century" data-add-back-btn="true" data-theme="b">
+			<div data-role="header" data-position="fixed">
+				<h1>CenturyTel<h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview">
+					<li>Account Number: 45622</li>
+					<li>Amount Due: $49.99</li>
+					<li>Date Due: 2012-12-11</li>
+					<li>Is Bill Paid? Paid</li>
+					<li>Priority: 5</li>
+					<li>Comments: Home Phone</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#info">Info</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Gold/" Data-ajax="false">Gold</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
+					</ul>	
+				</div>
+			</div>
+	</div>
+	<div data-role="page" id="comcast" data-add-back-btn="true" data-theme="b">
+			<div data-role="header" data-position="fixed">
+				<h1>Comcast<h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview">
+					<li>Account Number: 7777</li>
+					<li>Amount Due: $123.23</li>
+					<li>Date Due: 2012-08-08</li>
+					<li>Is Bill Paid? Paid</li>
+					<li>Priority: 1</li>
+					<li>Comments: Cable</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#info">Info</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Gold/" Data-ajax="false">Gold</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
+					</ul>	
+				</div>
+			</div>
+	</div>
+	<div data-role="page" id="cng" data-add-back-btn="true" data-theme="b">
+			<div data-role="header" data-position="fixed">
+				<h1>CNG<h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview">
+					<li>Account Number: 4444</li>
+					<li>Amount Due: $89.98</li>
+					<li>Date Due: 2012-10-10</li>
+					<li>Is Bill Paid? Paid</li>
+					<li>Priority: 8</li>
+					<li>Comments: Natural Gas</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#info">Info</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Gold/" Data-ajax="false">Gold</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
+					</ul>	
+				</div>
+			</div>
+	</div>
+	<div data-role="page" id="pse" data-add-back-btn="true" data-theme="b">
+			<div data-role="header" data-position="fixed">
+				<h1>PSE<h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview">
+					<li>Account Number: 4589</li>
+					<li>Amount Due: $89.98</li>
+					<li>Date Due: 2012-12-12</li>
+					<li>Is Bill Paid? Paid</li>
+					<li>Priority: 7</li>
+					<li>Comments: yea its paid</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#info">Info</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Gold/" Data-ajax="false">Gold</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
+					</ul>	
+				</div>
+			</div>
+	</div>
+	<div data-role="page" id="verizon" data-add-back-btn="true" data-theme="b">
+			<div data-role="header" data-position="fixed">
+				<h1>Verizon<h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview">
+					<li>Account Number: 3333</li>
+					<li>Amount Due: $100.22</li>
+					<li>Date Due: 2012-04-04</li>
+					<li>Is Bill Paid? Paid</li>
+					<li>Priority: 7</li>
+					<li>Comments: Cell Phone</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#info">Info</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Gold/" Data-ajax="false">Gold</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
+					</ul>	
+				</div>
+			</div>
+	</div>
+
+	<div data-role="page" id="loans" data-add-back-btn="true">
+
+		<div data-role="header" data-position="fixed">
+			<h1>Loans<h1>
+		</div>
+
+		<div data-role="content">
+			<ul data-role="listview" data-filter="true">
+				<li><a href="#fsu">FSU</a></li>
+			</ul>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#info">Info</a></li>
+					<li><a href="http://cabebartz.github.com/MIU-site/Week2/Gold/" Data-ajax="false">Gold</a></li>
+					<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
+				</ul>	
+			</div>
+		</div>
+
+	</div>
+
+	<div data-role="page" id="fsu" data-add-back-btn="true" data-theme="b">
+			<div data-role="header" data-position="fixed">
+				<h1>FSU<h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview">
+					<li>Account Number: 4999</li>
+					<li>Amount Due: $315.83</li>
+					<li>Date Due: 2012-12-13</li>
+					<li>Is Bill Paid? Paid</li>
+					<li>Priority: 2</li>
+					<li>Comments: Everything bill</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#info">Info</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Gold/" Data-ajax="false">Gold</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
+					</ul>	
+				</div>
+			</div>
+	</div>
+
+	<div data-role="page" id="misc" data-add-back-btn="true">
+
+		<div data-role="header" data-position="fixed">
+			<h1>Miscellaneous<h1>
+		</div>
+
+		<div data-role="content">
+			<ul data-role="listview" data-filter="true">
+				<li><a href="#car">Car Maintenance</a></li>
+				<li><a href="#college">College</a></li>
+				<li><a href="#food">Food</a></li>
+				<li><a href="#fun">Fun</a></li>
+				<li><a href="#gadget">Gadget Money</a></li>
+				<li><a href="#group">Group Health</a></li>
+				<li><a href="#furniture">Furniture</a></li>
+			</ul>
+
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#info">Info</a></li>
+					<li><a href="http://cabebartz.github.com/MIU-site/Week2/Gold/" Data-ajax="false">Gold</a></li>
+					<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
+				</ul>	
+			</div>
+		</div>
+
+	</div>
+
+	<div data-role="page" id="car" data-add-back-btn="true" data-theme="b">
+			<div data-role="header" data-position="fixed">
+				<h1>Car Maintenance<h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview">
+					<li>Account Number: 1111</li>
+					<li>Amount Due: $50.43</li>
+					<li>Date Due: 2012-01-10</li>
+					<li>Is Bill Paid? Not Paid</li>
+					<li>Priority: 5</li>
+					<li>Comments: Oil changes</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#info">Info</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Gold/" Data-ajax="false">Gold</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
+					</ul>	
+				</div>
+			</div>
+	</div>
+
+	<div data-role="page" id="college" data-add-back-btn="true" data-theme="b">
+			<div data-role="header" data-position="fixed">
+				<h1>Car Maintenance<h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview">
+					<li>Account Number: 67890</li>
+					<li>Amount Due: $250.87</li>
+					<li>Date Due: 2012-12-02</li>
+					<li>Is Bill Paid? Paid</li>
+					<li>Priority: 6</li>
+					<li>Comments: Money for College</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#info">Info</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Gold/" Data-ajax="false">Gold</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
+					</ul>	
+				</div>
+			</div>
+	</div>
+
+	<div data-role="page" id="food" data-add-back-btn="true" data-theme="b">
+			<div data-role="header" data-position="fixed">
+				<h1>Food<h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview">
+					<li>Account Number: 66666</li>
+					<li>Amount Due: $329.65</li>
+					<li>Date Due: 2012-11-11</li>
+					<li>Is Bill Paid? Not Paid</li>
+					<li>Priority: 9</li>
+					<li>Comments: groceries</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#info">Info</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Gold/" Data-ajax="false">Gold</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
+					</ul>	
+				</div>
+			</div>
+	</div>
+
+	<div data-role="page" id="fun" data-add-back-btn="true" data-theme="b">
+			<div data-role="header" data-position="fixed">
+				<h1>Fun<h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview">
+					<li>Account Number: 55567</li>
+					<li>Amount Due: $75.00</li>
+					<li>Date Due: 2012-12-30</li>
+					<li>Is Bill Paid? Not Paid</li>
+					<li>Priority: 1</li>
+					<li>Comments: Do something fun</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#info">Info</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Gold/" Data-ajax="false">Gold</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
+					</ul>	
+				</div>
+			</div>
+	</div>
+
+	<div data-role="page" id="gadget" data-add-back-btn="true" data-theme="b">
+			<div data-role="header" data-position="fixed">
+				<h1>Gadget Money<h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview">
+					<li>Account Number: 3212</li>
+					<li>Amount Due: $50.00</li>
+					<li>Date Due: 2012-12-30</li>
+					<li>Is Bill Paid? Not Paid</li>
+					<li>Priority: 1</li>
+					<li>Comments: Saving money for gadgets</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#info">Info</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Gold/" Data-ajax="false">Gold</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
+					</ul>	
+				</div>
+			</div>
+	</div>
+
+	<div data-role="page" id="group" data-add-back-btn="true" data-theme="b">
+			<div data-role="header" data-position="fixed">
+				<h1>Group Health<h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview">
+					<li>Account Number: 9090</li>
+					<li>Amount Due: $315.90</li>
+					<li>Date Due: 2012-12-01</li>
+					<li>Is Bill Paid? Paid</li>
+					<li>Priority: 9</li>
+					<li>Comments: family healthcare</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#info">Info</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Gold/" Data-ajax="false">Gold</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
+					</ul>	
+				</div>
+			</div>
+	</div>
+
+	<div data-role="page" id="furniture" data-add-back-btn="true" data-theme="b">
+			<div data-role="header" data-position="fixed">
+				<h1>Furniture<h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview">
+					<li>Account Number: 6789</li>
+					<li>Amount Due: $100.00</li>
+					<li>Date Due: 2012-12-17</li>
+					<li>Is Bill Paid? Not Paid</li>
+					<li>Priority: 2</li>
+					<li>Comments: Save money for furniture</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#info">Info</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Gold/" Data-ajax="false">Gold</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
+					</ul>	
+				</div>
+			</div>
+	</div>
+	<div data-role="page" id="info" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>Info<h1>
+		</div>
+		<div data-role="content">
+			<ul data-role="listview">
+				<li data-role="list-divider">
+					<h2>Git<h2>
+				</li>
+				<li>
+					<a href="https://github.com/cabebartz/MIU-site">
+						<h3>Repository<h3>
+					</a>
+				</li>
+			<ul>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#info">Info</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Gold/" Data-ajax="false">Gold</a></li>
+						<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
+					</ul>	
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	
+
+	<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+
+</body>
+</html>
