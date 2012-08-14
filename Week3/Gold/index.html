@@ -15,7 +15,7 @@
 	<meta http-equiv="cleartype" content="on">
 	
 	<!-- StyleSheets under here -->
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0-alpha.1/jquery.mobile-1.2.0-alpha.1.min.css" />
 	
 	
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
@@ -34,7 +34,7 @@
 
 		<div data-role="header">
 			<div>
-				<a href="additem.html">
+				<a href="#addItem">
 				<img  width="100%" src="images/checkforMUI.png"/>
 				</a>
 			</div>
@@ -93,6 +93,80 @@
 					<li><a href="http://cabebartz.github.com/MIU-site/Week2/Bronze/" Data-ajax="false">Bronze</a></li>
 				</ul>	
 			</div>
+		</div>
+
+	</div>
+
+	<div data-role="page" id="addItem" data-add-back-btn="true">
+
+		<div data-role="header" data-position="fixed">
+			<h1>Add A Bill</h1>
+		</div>
+
+		<div dat-role="content">
+
+			<div>
+				<p>* denotes required field</p>
+			</div>
+
+			<form action="" method="post" id="addBill">
+
+				<div data-role="fieldcontain">
+					<label for="categories">Bill Category:</label>
+					<select name="categories" id="categories" data-native-menu="false" data-theme="b">
+						<option data-placeholder="true">Pick A Category</option>
+						<option value="credit">Credit</option>
+						<option value="rent">Rent</option>
+						<option value="utilities">Utilities</option>
+						<option value="loans">Loans</option>
+						<option value="misc">Miscellaneous</option>
+					</select>
+				</div>
+
+				<div data-role="fieldcontain">
+					<label for="billName">* Name of Bill:</label>
+					<input type="text" name="billName" id="billName" />
+				</div>
+
+				<div data-role="fieldcontain">
+					<label for="accountNum">Account Number:</label>
+					<input type="text" name="accountNum" id="accountNum" />
+				</div>
+
+				<div data-role="fieldcontain">
+					<label for="ammountDue">* Amount Due:</label>
+					<input type="text" name="ammountDue" id="ammountDue" />
+				</div>
+
+				<div data-role="fieldcontain">
+					<label for="dateDue">* Due Date:</label>
+					<input type="text" name="dateDue" id="dateDue" />
+				</div>
+
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+						<legend>Is Bill Paid or Unpaid?</legend>
+						<input type="radio" value="Paid" name="isBillPaid" id="billPaid" data-theme="b" />
+						<label for="billPaid">Paid</label>
+						<input type="radio" value="notPaid" name="isBillPaid" id="billNotPaid" data-theme="b"/>
+						<label for="billNotPaid">Not Paid</label>
+					</fieldset>
+				</div>	
+
+				<div data-role="fieldcontain">
+					<label for="priority">Priority:</label>
+					<input type="range" name="priority" id="priority" value="5" min="1" max="10" data-theme="b">
+				</div>
+
+				<div data-role="fieldcontain">
+					<label for="comments">Additional Notes:</label>
+					<textarea></textarea>
+				</div>
+
+				<input type="submit" value="Add Bill" data-theme="b" data-inline="true"/>
+				<a href="#home" >cancel</a>
+
+			</form>
 		</div>
 
 	</div>
@@ -908,7 +982,7 @@
 
 	<!-- JavaScript under here -->
 	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0-alpha.1/jquery.mobile-1.2.0-alpha.1.min.js"></script>
 
 </body>
 </html>
