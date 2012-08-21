@@ -1,0 +1,17 @@
+/*
+MIU 1208
+Cabe Bartz
+Week 3
+style.css
+*/
+
+label.error{
+	display:block;
+	margin:5px 0;
+	color:#c02942;
+}
+
+#home .ui-li-has-thumb{
+	margin-bottom: -20px;
+}
+
