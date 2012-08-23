@@ -7,7 +7,9 @@ additem.html
 body {
 	/* font-family will be inherited by all other css tags*/
 	font-family: helvetica, arial, san-serif;
-	background-color: #61989E;
+	background-image: url(../images/MBT_background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 h1 {
 	/* css for title */
