@@ -4,6 +4,9 @@ Cabe Bartz
 Week 3
 style.css
 */
+.ui-title{
+    overflow: visible !important;
+}
 .ui-header{
     background-color:#c4d7e9;
     background-image: url("../images/header_bg.png");
